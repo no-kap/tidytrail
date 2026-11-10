@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tidytrail"
+dynamic = ["version"]
+description = "Clean messy CSV exports and keep an auditable log of every change."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Itamar Kaplansky" }]
+keywords = ["csv", "data-cleaning", "audit-log", "cli", "spreadsheet"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Utilities",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+tidytrail = "tidytrail.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/no-kap/tidytrail"
+Issues = "https://github.com/no-kap/tidytrail/issues"
+Changelog = "https://github.com/no-kap/tidytrail/blob/main/CHANGELOG.md"
+
+[tool.setuptools.dynamic]
+version = { attr = "tidytrail._version.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

@@ -1,0 +1,5 @@
+student_id,first_name,last_name,enrollment_date,grade_level
+1001,Ava,Nguyen,2026-09-01,2
+1002,Liam,O'Brien,2026-09-02,2
+1003,Sofia,,2026-09-03,2
+1004,Noah,Patel,2026-09-04,2

@@ -1,0 +1,114 @@
+{
+  "tool": "tidytrail",
+  "version": "0.0.1",
+  "source": "examples/messy_roster.csv",
+  "summary": {
+    "blank": 1,
+    "column_name": 5,
+    "date": 3,
+    "empty_row": 1,
+    "header_row": 1,
+    "whitespace": 3
+  },
+  "warnings": [],
+  "changes": [
+    {
+      "kind": "header_row",
+      "row": 3,
+      "column": null,
+      "before": "2 row(s) above header",
+      "after": "removed"
+    },
+    {
+      "kind": "column_name",
+      "row": 3,
+      "column": "student_id",
+      "before": " Student ID ",
+      "after": "student_id"
+    },
+    {
+      "kind": "column_name",
+      "row": 3,
+      "column": "first_name",
+      "before": "First Name",
+      "after": "first_name"
+    },
+    {
+      "kind": "column_name",
+      "row": 3,
+      "column": "last_name",
+      "before": "Last  Name",
+      "after": "last_name"
+    },
+    {
+      "kind": "column_name",
+      "row": 3,
+      "column": "enrollment_date",
+      "before": "Enrollment Date",
+      "after": "enrollment_date"
+    },
+    {
+      "kind": "column_name",
+      "row": 3,
+      "column": "grade_level",
+      "before": "Grade Level",
+      "after": "grade_level"
+    },
+    {
+      "kind": "whitespace",
+      "row": 4,
+      "column": "first_name",
+      "before": "  Ava ",
+      "after": "Ava"
+    },
+    {
+      "kind": "whitespace",
+      "row": 5,
+      "column": "last_name",
+      "before": "O'Brien ",
+      "after": "O'Brien"
+    },
+    {
+      "kind": "blank",
+      "row": 6,
+      "column": "last_name",
+      "before": "N/A",
+      "after": ""
+    },
+    {
+      "kind": "empty_row",
+      "row": 7,
+      "column": null,
+      "before": null,
+      "after": "removed"
+    },
+    {
+      "kind": "whitespace",
+      "row": 8,
+      "column": "grade_level",
+      "before": "2   ",
+      "after": "2"
+    },
+    {
+      "kind": "date",
+      "row": 4,
+      "column": "enrollment_date",
+      "before": "09/01/2026",
+      "after": "2026-09-01"
+    },
+    {
+      "kind": "date",
+      "row": 5,
+      "column": "enrollment_date",
+      "before": "9/2/2026",
+      "after": "2026-09-02"
+    },
+    {
+      "kind": "date",
+      "row": 8,
+      "column": "enrollment_date",
+      "before": "September 4, 2026",
+      "after": "2026-09-04"
+    }
+  ]
+}
